@@ -7,3 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Command lines
 `npx create-react-app my-app`
+
+
+
+# Features (pages)
+// App
+    -- Layouts
+    -- Containers (Statefull) (Smart):: Smart component with data mgmt.
+    -- Components (Stateless) (Dumb):: Dumby html
