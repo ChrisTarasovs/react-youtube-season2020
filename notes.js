@@ -30,4 +30,41 @@ class Location extends Bananas{
     }
 }
 const findLocations  = new Location();
-console.log(findLocations);
+console.dir(findLocations);
+
+
+
+// Lesson 3: 
+
+var color = 'yellow';
+/* console.log(color); */
+
+var bananas = function(){
+	return color;
+}
+
+// closure, functions
+var msg = function(userName){
+    greeting = (greetingType) => {
+    		return greetingType + ' ' + userName;
+    }
+    return greeting;
+}
+var starting = new msg('James');
+/* console.log( starting('Buenas dias')); */
+
+// Hoisting: Block scope, function scope.
+// var name;
+// var, let, const,
+var user = function (){
+		var name = 'Ilma';
+    if(1===1){
+    	const name = 'Tomas';
+      console.log(name);
+    }
+    console.log(name);
+    var name = 'Chris';
+    console.log(name);
+}
+
+user();
