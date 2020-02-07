@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-function Navigation(){
+function Navigation(props){
+    console.log('props', props)
     return(
-        <div>
-            <a>Dashboard</a>
-            <a>Products</a>
-            <a>User</a>
-        </div>
+        <ul>
+            {
+                props.menu ?
+                props.menu.map((item, index) => {
+                    return <li key={index}>{item}</li>
+                }) : 'nothing to render'
+            }
+           
+        </ul>
     )
 }
 
